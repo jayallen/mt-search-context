@@ -1,0 +1,19 @@
+name: SearchContext
+id: SearchContext
+key: SearchContext
+description: Provides a general context for multiblog searches
+author_name: Jay Allen, Endevver Consulting
+author_link: http://endevver.com
+version: 1.0
+doc_link: https://trac.endevver.com/movabletype/wiki/code/searchcontext
+
+applications:
+    search:
+        callbacks:
+            # search_post_render: $SearchContext::SearchContext::search_post_render
+            # init_request: $SearchContext::SearchContext::init_request
+            init_app: $SearchContext::SearchContext::init_app
+
+config_settings:
+    DefaultSearchContextBlog:
+        default: 0
